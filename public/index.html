@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Pokemon-go-helper-web</title>
+<style type="text/css">
+ body {margin: 0; padding:0;}
+.wrap{width:100%; height:400px;}
+
+.nav{text-align:center;height:35px;}
+.red{background-color:#e31b23; width:33.3%; height:20px; float:left;}
+.orange{background-color:#f8971d; width:33.3%; height:20px;float:left;}
+.blue{background-color:#007dc3; width:33.3%; height:20px;float:left;}
+
+.main{text-align:center; height:250px;margin:0 0 5px 0;}
+.logo{text-align:center;}
+.logo img{width:20%; height:35%;}
+
+.login{width:30%; display:inline-block; border:3px #f8971d solid; margin-top:10px;}
+.login-form form{text-align:center;}
+.login-title{text-align:center; background-color:#f8971d; border-bottom:1px #f8971d solid; padding:10px; font-weight:bold; color:#fff;}
+
+
+input[type="password"], input[type="text"] {
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 40px;
+  margin: 10px 0 0 5px;
+  padding-left: 20px;
+  transition: box-shadow 0.3s;
+  width: 220px;
+}
+
+input[type=submit] {
+  padding: 0 24px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 4px;
+  outline: 0;
+}
+
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<div class="red"></div>
+			<div class="orange"></div>
+			<div class="blue"></div>
+		</div>
+
+
+
+
+		<div class="main">
+			<div class="logo">
+				<img src="http://vectorlogo4u.com/wp-content/uploads/2016/07/pokeball-vector-720x340.png"/>
+			</div>
+
+			<div class="login">
+				<div class="login-title">
+					  Google Login
+				</div>
+				<div class="login-form">
+					<form action="/login" method="post">
+						<p>
+				    	<input type="text" name="username" placeholder="User Email" />
+				    </p>
+				    <p>
+				    	<input type="password" name="password" placeholder="Password" />
+				    </p>
+				    <input type="submit" value="닉네임 변경하기" />
+				    <br/><br/>
+		 			</form>
+		 		</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
